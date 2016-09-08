@@ -63,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
                 launch = new Intent(this, TestServicesActivity.class);
                 startActivity(launch);
                 break;
+            case R.id.mnu_main_activities_sensors:
+                launch = new Intent(this, SensorsActivity.class);
+                startActivity(launch);
+                break;
             default:
                 break;
         }

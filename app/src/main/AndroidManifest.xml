@@ -42,6 +42,7 @@
         <activity android:name=".activity.AlarmActivity" />
         <activity android:name=".activity.WebContentActivity" />
         <activity android:name=".activity.TestServicesActivity" />
+        <activity android:name=".activity.SensorsActivity"></activity>
 
         <service android:name=".service.RpcMessagingService" />
         <service android:name=".service.LocationProviderService" />

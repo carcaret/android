@@ -27,4 +27,7 @@
     <item
         android:id="@+id/mnu_main_activities_services"
         android:title="Services" />
+    <item
+        android:id="@+id/mnu_main_activities_sensors"
+        android:title="Sensors" />
 </menu>
