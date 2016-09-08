@@ -57,7 +57,13 @@
         </receiver>
 
         <activity android:name=".activity.ReadSensorActivity" />
-        <activity android:name=".activity.TasksDBActivity"></activity>
+        <activity android:name=".activity.TasksDBActivity" />
+
+        <provider
+            android:name=".content.TasksProvider"
+            android:authorities="CURSOANDROID.PROVIDER" />
+
+        <activity android:name=".activity.TasksProviderActivity"></activity>
     </application>
 
 </manifest>

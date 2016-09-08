@@ -32,5 +32,8 @@
         android:title="Sensors" />
     <item
         android:id="@+id/mnu_main_activities_create_tasks"
-        android:title="Crear tareas" />
+        android:title="Create task" />
+    <item
+        android:id="@+id/mnu_main_activities_show_tasks"
+        android:title="Show tasks" />
 </menu>
