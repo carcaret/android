@@ -2,6 +2,7 @@ package practicas.cursoandroid.practicasandroid.handler;
 
 import android.content.Context;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.widget.Toast;
 
@@ -15,11 +16,21 @@ public class MessageHandler extends Handler {
         this.context = context;
     }
 
+    public MessageHandler(Context context, Looper looper) {
+        super(looper);
+        this.context = context;
+    }
+
     @Override
     public void handleMessage(Message msg) {
         switch (msg.what) {
             case MsgMessagingService.SEND_MESSAGE:
                 MyMessage message = (MyMessage) msg.obj;
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 Toast.makeText(
                         context,
                         String.format("Mensaje enviado: %s - %s",

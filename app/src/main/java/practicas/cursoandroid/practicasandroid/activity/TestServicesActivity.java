@@ -10,6 +10,7 @@ import android.os.Messenger;
 import android.os.RemoteException;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
 import practicas.cursoandroid.practicasandroid.R;
 import practicas.cursoandroid.practicasandroid.binder.RpcMessage;
@@ -64,6 +65,7 @@ public class TestServicesActivity extends AppCompatActivity {
     public void testRpc(View view) {
         if(rpcMessage != null) {
             rpcMessage.send("963854125", "Mensaje de test RPC");
+            Toast.makeText(this, "Llamada RPC hecha", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -82,6 +84,7 @@ public class TestServicesActivity extends AppCompatActivity {
             try {
                 serviceMessenger.send(Message.obtain(null, MsgMessagingService.SEND_MESSAGE,
                         new MyMessage("963852147", "Mensaje de test MSG")));
+                Toast.makeText(this, "Llamada MSG hecha", Toast.LENGTH_LONG).show();
             } catch (RemoteException e) {
                 e.printStackTrace();
             }

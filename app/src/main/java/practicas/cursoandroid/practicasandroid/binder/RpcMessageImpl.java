@@ -14,6 +14,11 @@ public class RpcMessageImpl extends Binder implements RpcMessage {
 
     @Override
     public void send(String destination, String message) {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Toast.makeText(
                 context, String.format("Mensaje: %s - %s", destination, message), Toast.LENGTH_LONG)
                 .show();
