@@ -6,9 +6,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Scanner;
 
 import practicas.cursoandroid.practicasandroid.R;
+import practicas.cursoandroid.practicasandroid.util.RawReader;
 
 public class TaskDBHelper extends SQLiteOpenHelper {
 
@@ -23,12 +23,7 @@ public class TaskDBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         try (InputStream ddl = context.getResources().openRawResource(R.raw.ddl)) {
-            Scanner read = new Scanner(ddl);
-            StringBuilder sb = new StringBuilder();
-            while(read.hasNext()) {
-                sb.append(read.nextLine());
-            }
-            db.execSQL(sb.toString());
+            db.execSQL(RawReader.readRaw(ddl));
         } catch (IOException e) {
             e.printStackTrace();
         }
