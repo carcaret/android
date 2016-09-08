@@ -42,7 +42,7 @@
         <activity android:name=".activity.AlarmActivity" />
         <activity android:name=".activity.WebContentActivity" />
         <activity android:name=".activity.TestServicesActivity" />
-        <activity android:name=".activity.SensorsActivity"></activity>
+        <activity android:name=".activity.SensorsActivity" />
 
         <service android:name=".service.RpcMessagingService" />
         <service android:name=".service.LocationProviderService" />
@@ -55,6 +55,8 @@
                 <action android:name="cursoandroid.SYNCHRONIZATION" />
             </intent-filter>
         </receiver>
+
+        <activity android:name=".activity.ReadSensorActivity"></activity>
     </application>
 
 </manifest>
