@@ -67,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
                 launch = new Intent(this, SensorsActivity.class);
                 startActivity(launch);
                 break;
+            case R.id.mnu_main_activities_create_tasks:
+                launch = new Intent(this, TasksDBActivity.class);
+                startActivity(launch);
+                break;
             default:
                 break;
         }

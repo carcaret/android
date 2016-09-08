@@ -56,7 +56,8 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".activity.ReadSensorActivity"></activity>
+        <activity android:name=".activity.ReadSensorActivity" />
+        <activity android:name=".activity.TasksDBActivity"></activity>
     </application>
 
 </manifest>
