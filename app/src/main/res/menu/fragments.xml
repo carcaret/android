@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mnu_fragments_showList" android:title="Show list" />
+    <item android:id="@+id/mnu_fragments_showTable" android:title="Show table"/>
+    <item android:id="@+id/mnu_fragments_hideList" android:title="Hide list" />
+    <item android:id="@+id/mnu_fragments_hideTable" android:title="Hide table"/>
+    <item android:id="@+id/mnu_fragments_swap" android:title="Swap"/>
+
+    <item android:id="@+id/mnu_fragments_navigable" android:title="Navigable"
+        android:checkable="true"/>
+</menu>

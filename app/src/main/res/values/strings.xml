@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PracticasAndroid</string>
+    <string name="ALARM_ACTION">cursonandroid.ALARM</string>
+    <string name="SYCHRONIZATION_ACTION">cursoandroid.SYNCHRONIZATION</string>
+</resources>

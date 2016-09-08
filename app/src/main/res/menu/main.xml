@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Activities"
+        android:id="@+id/mnu_main_activities">
+        <menu>
+            <item android:title="Lifecycle"
+                android:id="@+id/mnu_main_activities_lifecycle" />
+            <item android:title="Fragments"
+                android:id="@+id/mnu_main_activities_fragments" />
+            <item android:title="Dialogs"
+                android:id="@+id/mnu_main_activities_dialogs" />
+            <item android:title="Location"
+                android:id="@+id/mnu_main_activities_location" />
+            <item android:title="Google Maps"
+                android:id="@+id/mnu_main_activities_google_maps" />
+            <item android:title="Broadcast Receiver"
+                android:id="@+id/mnu_main_activities_broadcast_receiver" />
+            <item android:title="Alarm"
+                android:id="@+id/mnu_main_activities_alarm" />
+            <item android:title="Web Content"
+                android:id="@+id/mnu_main_activities_web_content" />
+            <item android:title="Services"
+                android:id="@+id/mnu_main_activities_services" />
+        </menu>
+    </item>
+
+</menu>
